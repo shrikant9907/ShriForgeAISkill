@@ -1,30 +1,33 @@
 # Audit Workflow
 
-Use when review/findings are the primary outcome.
+Use when evaluating an existing website or release candidate for technical health, UX, SEO, and content truth.
 
 ## Sequence
 
-1. Define audit scope and evidence available.
-2. Inspect only relevant surfaces, expanding when a finding suggests broader risk.
-3. Record evidence-based findings using the format below.
-4. Prioritize blocker/high findings.
-5. If fixes are requested, fix and re-validate affected areas.
-6. State unverified areas and final completion state.
+1. Define audit scope (Quick vs. Full) and collect repository/network evidence.
+2. Delegate specialist reviews in parallel when subagents are supported:
+   - `agents/truth-auditor.md` audits business claims, contact details, and placeholder leakage.
+   - `agents/web-architect.md` audits component boundaries, layout shift (CLS), and mobile responsiveness.
+   - `agents/release-evaluator.md` evaluates the 13 formal quality gates and VATM score.
+3. Run automated verification scripts:
+   - `python scripts/audit_content_truth.py .`
+   - `python scripts/audit_seo_metadata.py .`
+4. Record all findings using the **Falsifiability Protocol** below.
+5. Prioritize issues (`BLOCKER`, `HIGH`, `MEDIUM`, `LOW`).
+6. Deliver actionable report with explicit completion state (`PASS`, `PASS_WITH_NOTES`, `BLOCKED`, `FAIL`).
 
-## Finding format
+## Falsifiability Protocol (Evidence-Based Finding Format)
 
-Each finding should contain:
+Every recorded finding must be testable and verifiable. Never report hypothetical issues without observable evidence:
 
-- severity (`BLOCKER`, `HIGH`, `MEDIUM`, `LOW`);
-- evidence/location;
-- user/business/technical impact;
-- recommended correction;
-- status: observed / fixed / unable-to-verify.
-
-Do not report theoretical checklist items as confirmed defects without evidence.
-
-If the user asks for fixes too, apply the quality loop and re-audit changed areas.
-
+```markdown
+### [SEVERITY] Finding Title
+- **Location / Evidence**: File path, line number, or exact HTTP header/response observed.
+- **Impact**: Concrete risk to user experience, search indexing, or business trust.
+- **Recommended Correction**: Exact code change or content replacement.
+- **Falsifiable Verification Test**: Exactly how to prove this fix succeeded (e.g. `curl -I`, Rich Results Test, or test script pass).
+- **Status**: `OPEN` / `VERIFIED_FIXED` / `UNABLE_TO_VERIFY`
+```
 
 ## Contract
 

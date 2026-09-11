@@ -62,12 +62,35 @@ def check_json() -> None:
 
 
 def check_internal_refs() -> None:
-    pattern=re.compile(r'`((?:core|workflows|disciplines|adapters|profiles|templates|checklists|examples)/[^`]+?\.(?:md|yml|json))`')
+    pattern=re.compile(r'`((?:core|workflows|disciplines|adapters|profiles|templates|checklists|examples|commands|agents)/[^`]+?\.(?:md|yml|json))`')
     for p in ROOT.rglob('*.md'):
         text=p.read_text(encoding='utf-8')
         for rel in pattern.findall(text):
             if not (ROOT/rel).exists():
                 err(f'broken internal reference in {p.relative_to(ROOT)}: {rel}')
+
+
+def check_commands_and_agents() -> None:
+    for p in (ROOT/'commands').glob('*.md'):
+        text=p.read_text(encoding='utf-8')
+        if not text.startswith('# /'): err(f'command missing # / title: {p.name}')
+        if '## Usage' not in text: err(f'command missing ## Usage section: {p.name}')
+
+    for p in (ROOT/'agents').glob('*.md'):
+        text=p.read_text(encoding='utf-8')
+        if not text.startswith('# Subagent:'): err(f'agent missing # Subagent: title: {p.name}')
+        if '## Primary Objective' not in text: err(f'agent missing ## Primary Objective: {p.name}')
+
+    plugin_file = ROOT / '.claude-plugin' / 'plugin.json'
+    if not plugin_file.exists():
+        err('missing .claude-plugin/plugin.json manifest')
+    else:
+        try:
+            data = json.loads(plugin_file.read_text(encoding='utf-8'))
+            if data.get('name') != 'shriforge-ai-skill':
+                err('.claude-plugin/plugin.json has invalid name')
+        except Exception as e:
+            err(f'malformed .claude-plugin/plugin.json: {e}')
 
 
 def check_workflows() -> None:
@@ -103,7 +126,7 @@ def check_generic_residue() -> None:
 
 
 def main() -> int:
-    check_required(); check_skill(); check_json(); check_internal_refs(); check_workflows(); check_duplicates(); check_generic_residue()
+    check_required(); check_skill(); check_json(); check_internal_refs(); check_commands_and_agents(); check_workflows(); check_duplicates(); check_generic_residue()
     print(f'ShriForgeAISkill validation: {len(ERRORS)} error(s), {len(WARNINGS)} warning(s)')
     for x in ERRORS: print('ERROR:', x)
     for x in WARNINGS: print('WARN: ', x)

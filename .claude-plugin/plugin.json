@@ -1,0 +1,27 @@
+{
+  "name": "shriforge-ai-skill",
+  "description": "Production website engineering skill for Claude Code, Codex, and AI coding agents. Plan, design, build, audit, optimize, and ship production-ready websites with explicit quality gates and verified project truth.",
+  "version": "1.2.0",
+  "author": {
+    "name": "Shrikant Yadav",
+    "url": "https://shrikantyadav.com/"
+  },
+  "homepage": "https://shrikant9907.github.io/ShriForgeAISkill/",
+  "repository": "https://github.com/shrikant9907/ShriForgeAISkill",
+  "license": "Apache-2.0",
+  "keywords": [
+    "claude-code",
+    "web-engineering",
+    "agents",
+    "skills",
+    "commands",
+    "production-ready",
+    "seo",
+    "accessibility",
+    "performance",
+    "quality-gates",
+    "project-truth"
+  ],
+  "commands": "./commands",
+  "agents": "./agents"
+}

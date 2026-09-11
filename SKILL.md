@@ -124,10 +124,30 @@ Profiles specialize the engine without replacing it:
 - Indian school/college → `profiles/school-india.md`
 - local business → `profiles/local-business.md`
 - SaaS marketing → `profiles/saas-marketing.md`
+- e-commerce storefront → `profiles/ecommerce-store.md`
+- healthcare/clinic → `profiles/healthcare-clinic.md`
+- developer docs/API hub → `profiles/developer-docs.md`
 
 Load a profile only when it matches the project.
 
-## 8. Plan proportional to scope
+## 8. Interactive commands, subagents, and tools
+
+When supported by the host agent environment:
+
+- **Slash Commands**:
+  - `/shri-plan` (`commands/shri-plan.md`) — intent-first architecture and planning
+  - `/truth-check` (`commands/truth-check.md`) — scan project for unverified claims and placeholders
+  - `/shri-audit` (`commands/shri-audit.md`) — full evidence-based website audit
+  - `/release-gate` (`commands/release-gate.md`) — evaluate the 13 production release gates
+- **Specialized Subagents**:
+  - `agents/truth-auditor.md` — fact and claim auditor
+  - `agents/web-architect.md` — structure, state, and component boundary designer
+  - `agents/release-evaluator.md` — impartial launch gatekeeper
+- **Executable Audit Tools**:
+  - `scripts/audit_content_truth.py` — scans for dummy data, fake numbers, and placeholder leakage
+  - `scripts/audit_seo_metadata.py` — scans HTML and templates for title/meta/canonical/H1 issues
+
+## 9. Plan proportional to scope
 
 For substantial work, record:
 
@@ -142,7 +162,7 @@ For substantial work, record:
 
 Use `templates/project-plan.md` when a persistent plan is useful. Do not create project-management files for tiny changes unless requested or already conventional in the repository.
 
-## 9. Implement the smallest coherent solution
+## 10. Implement the smallest coherent solution
 
 During implementation:
 
@@ -157,7 +177,7 @@ During implementation:
 - validate user-controlled input at trust boundaries;
 - preserve URLs/search equity during migrations where applicable.
 
-## 10. Validate and iterate
+## 11. Validate and iterate
 
 Use `core/release-gates.md` plus the selected workflow's gates. Validate the changed surface first, then broader surfaces as risk demands.
 
@@ -177,7 +197,7 @@ Applicable checks can include:
 
 Fix `BLOCKER` and `HIGH` issues when access and information permit. Re-run affected checks after fixes.
 
-## 11. Completion report
+## 12. Completion report
 
 For substantial tasks, finish with:
 

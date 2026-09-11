@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.2.0
+
+- Added interactive slash commands: `/shri-plan`, `/truth-check`, `/shri-audit`, and `/release-gate`.
+- Added specialized subagents: `truth-auditor`, `web-architect`, and `release-evaluator`.
+- Added standalone zero-dependency Python tools: `audit_content_truth.py` and `audit_seo_metadata.py`.
+- Added Design Token Vault in `disciplines/visual-design.md` with typography pairings, semantic CSS variables, and 44px touch targets.
+- Added 2026 Passage Citability Engine (130–170 word chunks, BLUF, definition-first) in `disciplines/aeo-geo.md`.
+- Added VATM 100-Point Quality Rubric in `disciplines/seo.md`.
+- Added Falsifiability Protocol in `workflows/audit.md` for evidence-based audits with verifiable test checks.
+- Enhanced framework adapters (`nextjs-app-router.md`, `astro.md`, `react-vite.md`) with concrete production code recipes.
+- Expanded domain profiles with E-Commerce Storefronts, Healthcare Clinics, and Developer Documentation.
+- Added `.claude-plugin/plugin.json` and marketplace manifests for 1-click plugin installation.
+- Expanded unit test suite to 17 automated tests.
+
 ## 1.1.1
 
 - Updated all repository links to the canonical GitHub repository: `https://github.com/shrikant9907/ShriForgeAISkill`.

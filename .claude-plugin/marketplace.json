@@ -1,0 +1,40 @@
+{
+  "name": "shriforge-ai-skill",
+  "owner": {
+    "name": "Shrikant Yadav",
+    "url": "https://shrikantyadav.com/"
+  },
+  "metadata": {
+    "description": "Production website engineering skill for Claude Code, Codex, and AI agents"
+  },
+  "plugins": [
+    {
+      "name": "shriforge-ai-skill",
+      "source": "./",
+      "description": "Production website engineering skill: plan, design, build, audit, and ship websites with explicit quality gates and verified project truth.",
+      "author": {
+        "name": "Shrikant Yadav"
+      },
+      "homepage": "https://shrikant9907.github.io/ShriForgeAISkill/",
+      "repository": "https://github.com/shrikant9907/ShriForgeAISkill",
+      "license": "Apache-2.0",
+      "keywords": [
+        "web-engineering",
+        "nextjs",
+        "astro",
+        "seo",
+        "accessibility",
+        "audit",
+        "quality-gates"
+      ],
+      "category": "engineering",
+      "tags": [
+        "websites",
+        "quality-gates",
+        "audit",
+        "seo",
+        "a11y"
+      ]
+    }
+  ]
+}
