@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.1.1
+
+- Updated all repository links to the canonical GitHub repository: `https://github.com/shrikant9907/ShriForgeAISkill`.
+- Standardized project attribution to **Shrikant Yadav** as the sole creator/owner identity across the repository and website.
+- Updated GitHub Pages links to `https://shrikant9907.github.io/ShriForgeAISkill/`.
+- Added canonical repository and project website metadata to `CITATION.cff`.
+- Added canonical and Open Graph URL metadata to the GitHub Pages site.
+- Bumped patch version to v1.1.1.
+- Expanded the GitHub Pages site into a multi-page documentation and discovery hub while keeping the release at v1.1.1.
+- Added dedicated Getting Started, Claude Code, Codex, and FAQ pages with direct-answer content and internal linking.
+- Added WebSite, SoftwareSourceCode, Person, FAQPage, and BreadcrumbList JSON-LD where applicable.
+- Added `robots.txt`, `sitemap.xml`, `llms.txt`, and a maintainer search/AEO/GEO strategy document.
+- Linked the creator identity to `https://shrikantyadav.com/` across public documentation metadata and footers.
+
 ## 1.1.0
 
 - Added the official ShriForgeAISkill GitHub Pages website under `docs/`.

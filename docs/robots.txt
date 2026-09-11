@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shrikant9907.github.io/ShriForgeAISkill/sitemap.xml

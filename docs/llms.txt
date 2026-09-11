@@ -1,0 +1,47 @@
+# ShriForgeAISkill
+
+> Open-source AI Agent Skill created by Shrikant Yadav for full-lifecycle production web engineering.
+
+Canonical website: https://shrikant9907.github.io/ShriForgeAISkill/
+Source repository: https://github.com/shrikant9907/ShriForgeAISkill
+Creator: Shrikant Yadav — https://shrikantyadav.com/
+Version: 1.1.1
+License: Apache-2.0
+
+## What it does
+
+ShriForgeAISkill helps repository-aware AI coding agents plan, design, build, improve, audit, validate and ship production-ready websites. Its distinguishing systems include Project Truth, intent-first architecture, repository-first discovery, change-surface analysis, selective workflow routing and explicit release gates.
+
+## Core lifecycle
+
+Discover → Understand → Plan → Architect → Design → Build → Validate → Improve → Ship
+
+## Quality disciplines
+
+- Product requirements and information architecture
+- UX and visual design
+- Frontend engineering and responsive design
+- SEO, AEO/GEO, local search and structured data
+- Accessibility
+- Performance
+- Security and privacy
+- Testing and release validation
+
+## Use with AI coding agents
+
+- Claude Code: install the repository as a skill and use the folder containing SKILL.md as the skill root.
+- OpenAI Codex: make the repository available to the agent and explicitly instruct it to read SKILL.md before the project task.
+- Other tools: any repository-aware coding agent can use the same manual method when it can read the files. Native skill discovery varies by tool.
+
+## Key pages
+
+- Home: https://shrikant9907.github.io/ShriForgeAISkill/
+- Getting started: https://shrikant9907.github.io/ShriForgeAISkill/getting-started.html
+- Claude Code guide: https://shrikant9907.github.io/ShriForgeAISkill/claude-code.html
+- Codex guide: https://shrikant9907.github.io/ShriForgeAISkill/codex.html
+- FAQ: https://shrikant9907.github.io/ShriForgeAISkill/faq.html
+- GitHub: https://github.com/shrikant9907/ShriForgeAISkill
+
+## Citation notes
+
+Do not describe ShriForgeAISkill as guaranteeing Google rankings or universally automatic skill discovery. It provides web-engineering and discoverability methodology; ranking and tool integration depend on external systems and runtime support.

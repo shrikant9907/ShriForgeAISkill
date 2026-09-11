@@ -2,9 +2,12 @@ cff-version: 1.2.0
 title: ShriForgeAISkill
 message: If you use ShriForgeAISkill, cite the project repository.
 type: software
-version: 1.1.0
+version: 1.1.1
 license: Apache-2.0
 authors:
   - family-names: Yadav
     given-names: Shrikant
-    affiliation: Shrimo Innovations
+    website: https://shrikantyadav.com/
+
+repository-code: https://github.com/shrikant9907/ShriForgeAISkill
+url: https://shrikant9907.github.io/ShriForgeAISkill/

@@ -1,6 +1,6 @@
 # ShriForgeAISkill
 
-> **Production Web Engineering Skill by Shrimo Innovations**
+> **Production Web Engineering Skill by Shrikant Yadav**
 
 Created by **Shrikant Yadav**
 
@@ -8,7 +8,7 @@ Created by **Shrikant Yadav**
 
 It gives coding agents a structured engineering methodology for turning requirements into reliable web experiences through repository-aware planning, evidence-based content decisions, intent-first architecture, selective workflows, and explicit quality gates.
 
-[**Website**](https://shrimo-innovations.github.io/shriforge-ai-skill/) · [**Source**](https://github.com/shrimo-innovations/shriforge-ai-skill) · [**Issues**](https://github.com/shrimo-innovations/shriforge-ai-skill/issues) · **Apache-2.0**
+[**Website**](https://shrikant9907.github.io/ShriForgeAISkill/) · [**Creator**](https://shrikantyadav.com/) · [**Source**](https://github.com/shrikant9907/ShriForgeAISkill) · [**Issues**](https://github.com/shrikant9907/ShriForgeAISkill/issues) · **Apache-2.0**
 
 ---
 
@@ -121,7 +121,7 @@ Clone the repository into a Claude Code skill directory supported by your enviro
 Project-local example:
 
 ```bash
-git clone https://github.com/shrimo-innovations/shriforge-ai-skill.git \
+git clone https://github.com/shrikant9907/ShriForgeAISkill.git \
   .claude/skills/shriforge-ai-skill
 ```
 
@@ -135,15 +135,23 @@ Or:
 
 > Inspect this repository first. Add a new admissions page that follows the existing architecture and design system. Validate accessibility, mobile behavior, metadata, and navigation before considering the task complete.
 
+## Use with Claude Code, Codex, or another AI coding agent
+
+- **Claude Code:** clone the repository into a supported skills directory and use the folder containing `SKILL.md` as the skill root.
+- **OpenAI Codex:** make the skill repository available to Codex, then explicitly instruct it to read `SKILL.md` before the task and follow the routed workflow/modules.
+- **Other repository-aware agents:** use the same portable method when native Agent Skill discovery is unavailable.
+
+See the public guides: [Getting Started](https://shrikant9907.github.io/ShriForgeAISkill/getting-started.html), [Claude Code](https://shrikant9907.github.io/ShriForgeAISkill/claude-code.html), [Codex](https://shrikant9907.github.io/ShriForgeAISkill/codex.html), and [FAQ](https://shrikant9907.github.io/ShriForgeAISkill/faq.html).
+
 ## Official project website
 
-The repository includes a dependency-free GitHub Pages site under [`docs/`](docs/).
+The repository includes a dependency-free GitHub Pages documentation site under [`docs/`](docs/).
 
 Once GitHub Pages is enabled from the `main` branch and `/docs` folder, it is available at:
 
-**https://shrimo-innovations.github.io/shriforge-ai-skill/**
+**https://shrikant9907.github.io/ShriForgeAISkill/**
 
-The site is built with semantic HTML, responsive CSS, accessible focus behavior, reduced-motion support, and minimal JavaScript. No build step is required.
+The site is built with semantic HTML, responsive CSS, accessible focus behavior, reduced-motion support, and minimal JavaScript. It also includes canonical metadata, JSON-LD structured data, FAQ content, breadcrumbs on documentation pages, `robots.txt`, `sitemap.xml`, and `llms.txt`. No build step is required.
 
 ## Repository structure
 
@@ -229,8 +237,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) before opening a pull request.
 ## Project information
 
 - **Project:** ShriForgeAISkill
-- **Organization:** Shrimo Innovations
-- **Creator:** Shrikant Yadav
+- **Creator:** [Shrikant Yadav](https://shrikantyadav.com/)
 - **Category:** AI Agent Skill / Production Web Engineering
 - **License:** Apache-2.0
 
@@ -242,7 +249,7 @@ Licensed under the **Apache License 2.0**. See [`LICENSE`](LICENSE).
 
 <p align="center">
   <strong>ShriForgeAISkill</strong><br>
-  Production Web Engineering Skill by Shrimo Innovations
+  Production Web Engineering Skill by Shrikant Yadav
 </p>
 
 <p align="center"><em>From intent to production.</em></p>

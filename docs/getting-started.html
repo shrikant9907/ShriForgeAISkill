@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to Use ShriForgeAISkill with Claude Code, Codex and AI Coding Agents</title>
+  <meta name="description" content="Install and use ShriForgeAISkill with Claude Code, OpenAI Codex or another repository-aware AI coding agent. Includes project setup, prompts, verification and portability guidance.">
+  <meta name="author" content="Shrikant Yadav">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+  <meta name="theme-color" content="#08090d">
+  <link rel="canonical" href="https://shrikant9907.github.io/ShriForgeAISkill/getting-started.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="ShriForgeAISkill">
+  <meta property="og:title" content="How to Use ShriForgeAISkill with Claude Code, Codex and AI Coding Agents">
+  <meta property="og:description" content="Install and use ShriForgeAISkill with Claude Code, OpenAI Codex or another repository-aware AI coding agent. Includes project setup, prompts, verification and portability guidance.">
+  <meta property="og:url" content="https://shrikant9907.github.io/ShriForgeAISkill/getting-started.html">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ShriForgeAISkill", "item": "https://shrikant9907.github.io/ShriForgeAISkill/"}, {"@type": "ListItem", "position": 2, "name": "Getting Started", "item": "https://shrikant9907.github.io/ShriForgeAISkill/getting-started.html"}]}, {"@type": "WebPage", "name": "Getting Started", "url": "https://shrikant9907.github.io/ShriForgeAISkill/getting-started.html", "isPartOf": {"@id": "https://shrikant9907.github.io/ShriForgeAISkill/#website"}, "author": {"@id": "https://shrikantyadav.com/#person"}}]}</script>
+</head><body class="docs-body">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="grid-noise" aria-hidden="true"></div>
+<header class="site-header" data-header><div class="shell nav-wrap"><a class="brand" href="./"><span class="brand-mark" aria-hidden="true">SF</span><span>ShriForge<span class="brand-soft">AI</span>Skill</span></a><nav class="desktop-nav" aria-label="Primary navigation"><a href="getting-started.html">Get started</a><a href="claude-code.html">Claude Code</a><a href="codex.html">Codex</a><a href="faq.html">FAQ</a></nav><a class="button button-small button-ghost" href="https://github.com/shrikant9907/ShriForgeAISkill" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></header>
+<main id="main" class="docs-main shell">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="./">Home</a><span>/</span><span aria-current="page">Getting Started</span></nav>
+  <header class="docs-hero"><p class="kicker">GETTING STARTED</p><h1>Use ShriForgeAISkill with your AI coding agent.</h1><p><strong>ShriForgeAISkill is a repository-based production web engineering methodology.</strong> Claude Code can install it as a skill; Codex and other agents can use it by reading <code>SKILL.md</code> directly when the repository is available to them.</p></header>
+
+  <section class="docs-section"><h2>1. Choose how your tool will load the skill</h2><div class="agent-grid compact">
+    <article class="agent-card"><span>Claude Code</span><h3>Native skill-directory setup</h3><p>Clone the repository into a supported Claude Code skills directory. The folder containing <code>SKILL.md</code> is the skill root.</p><a href="claude-code.html">Claude Code instructions →</a></article>
+    <article class="agent-card"><span>OpenAI Codex</span><h3>Repository instruction setup</h3><p>Make ShriForgeAISkill available in the workspace and explicitly tell Codex to read <code>SKILL.md</code> before the task.</p><a href="codex.html">Codex instructions →</a></article>
+    <article class="agent-card"><span>Other agents</span><h3>Portable manual setup</h3><p>Any coding agent that can read local/repository files can follow the same master contract when you point it to the skill root.</p></article>
+  </div></section>
+
+  <section class="docs-section" id="other-tools"><h2>2. Generic setup for any repository-aware AI tool</h2><p>The portable path is simple: make the ShriForgeAISkill repository readable to the agent, then give it one explicit instruction before your project request.</p>
+  <pre class="doc-code"><code>Before working on this project, read the ShriForgeAISkill SKILL.md file.
+Follow its task classification, Project Truth, selective routing,
+change-surface analysis and applicable quality gates.
+Load only the workflow, disciplines, adapter and profile needed
+for this task. Do not invent project facts.</code></pre>
+  <p>Do not assume every AI tool supports automatic Agent Skill discovery. If native discovery is unavailable, the explicit instruction above is the compatibility layer.</p></section>
+
+  <section class="docs-section"><h2>3. Give the agent an outcome, not a pile of implementation instructions</h2><p>Describe the website, audience, constraints and any verified facts you already know. ShriForgeAISkill is designed to derive the implementation workflow from the outcome.</p>
+  <pre class="doc-code"><code>Build a production-ready website for a school in India.
+
+The verified school facts are in the existing repository.
+Make it trustworthy, mobile-first and distinctive.
+Handle architecture, visual direction, implementation, SEO,
+AEO/GEO, accessibility, performance, security and testing.
+Do not invent affiliations, achievements or statistics.
+Run applicable release gates before claiming completion.</code></pre></section>
+
+  <section class="docs-section"><h2>4. For an existing project, tell the agent to preserve healthy architecture</h2><pre class="doc-code"><code>Inspect this repository first.
+Add an admissions page using the existing design system and conventions.
+Map the change surface before editing.
+Preserve healthy infrastructure and business logic.
+Validate navigation, mobile behavior, accessibility, metadata and tests.</code></pre></section>
+
+  <section class="docs-section"><h2>5. Know what completion means</h2><p>ShriForgeAISkill uses four explicit release states rather than vague “done” language.</p><div class="release-table"><div><strong>PASS</strong><span>Applicable gates passed.</span></div><div><strong>PASS_WITH_NOTES</strong><span>Ready with non-blocking limitations.</span></div><div><strong>BLOCKED</strong><span>Missing information, credentials or infrastructure prevents completion.</span></div><div><strong>FAIL</strong><span>Known blocking defects remain.</span></div></div></section>
+
+  <section class="docs-section"><h2>6. Validate the skill repository itself</h2><pre class="doc-code"><code>python scripts/validate_repo.py
+python -m unittest discover -s tests -v</code></pre><p>These checks validate repository structure, skill metadata, schemas, workflow contracts and key routing/truth expectations.</p></section>
+
+  <section class="docs-section docs-next"><h2>Next</h2><p><a href="claude-code.html">Install with Claude Code →</a> · <a href="codex.html">Use with Codex →</a> · <a href="faq.html">Read the FAQ →</a></p></section>
+</main><footer class="site-footer"><div class="shell footer-grid"><div><a class="brand footer-brand" href="./"><span class="brand-mark" aria-hidden="true">SF</span><span>ShriForge<span class="brand-soft">AI</span>Skill</span></a><p>Production Web Engineering Skill.</p></div><div class="footer-meta"><p>Created by <a class="author-link" href="https://shrikantyadav.com/" rel="me">Shrikant Yadav</a></p><p>© <span data-year></span> Shrikant Yadav</p></div><div class="footer-links"><a href="getting-started.html">Docs</a><a href="faq.html">FAQ</a><a href="https://github.com/shrikant9907/ShriForgeAISkill" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></footer></body></html>

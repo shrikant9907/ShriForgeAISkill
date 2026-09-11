@@ -3,267 +3,210 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ShriForgeAISkill is an open-source production web engineering skill by Shrimo Innovations for planning, designing, building, validating, and shipping professional websites.">
+  <title>ShriForgeAISkill — AI Agent Skill for Production-Ready Websites</title>
+  <meta name="description" content="Free open-source AI Agent Skill for Claude Code, Codex and other coding agents to plan, design, build, audit and ship production-ready websites with SEO, AEO/GEO, accessibility, performance, security and quality gates.">
+  <meta name="author" content="Shrikant Yadav">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta name="theme-color" content="#08090d">
-  <meta property="og:title" content="ShriForgeAISkill — Production Web Engineering Skill">
-  <meta property="og:description" content="From intent to production. An open-source Agent Skill by Shrimo Innovations.">
+  <link rel="canonical" href="https://shrikant9907.github.io/ShriForgeAISkill/">
+  <link rel="alternate" type="text/plain" href="llms.txt" title="LLM-readable project summary">
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <title>ShriForgeAISkill — Production Web Engineering Skill</title>
+  <meta property="og:site_name" content="ShriForgeAISkill">
+  <meta property="og:title" content="ShriForgeAISkill — AI Agent Skill for Production-Ready Websites">
+  <meta property="og:description" content="An open-source production web engineering skill for Claude Code, Codex and other AI coding agents. Plan, build, validate and ship complete websites with explicit quality gates.">
+  <meta property="og:url" content="https://shrikant9907.github.io/ShriForgeAISkill/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ShriForgeAISkill — Production Web Engineering Skill">
+  <meta name="twitter:description" content="Open-source AI Agent Skill for full-lifecycle website engineering, SEO/AEO/GEO, accessibility, performance, security and release validation.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://shrikant9907.github.io/ShriForgeAISkill/#website",
+        "url": "https://shrikant9907.github.io/ShriForgeAISkill/",
+        "name": "ShriForgeAISkill",
+        "description": "Open-source AI Agent Skill for production web engineering.",
+        "inLanguage": "en",
+        "author": {"@id": "https://shrikantyadav.com/#person"}
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://shrikant9907.github.io/ShriForgeAISkill/#software",
+        "name": "ShriForgeAISkill",
+        "alternateName": "Shri Forge AI Skill",
+        "version": "1.1.1",
+        "description": "An open-source AI Agent Skill for planning, designing, building, auditing, optimizing and shipping production-ready websites with repository-aware engineering and explicit quality gates.",
+        "codeRepository": "https://github.com/shrikant9907/ShriForgeAISkill",
+        "url": "https://shrikant9907.github.io/ShriForgeAISkill/",
+        "license": "https://www.apache.org/licenses/LICENSE-2.0",
+        "programmingLanguage": ["Markdown", "Python", "HTML", "CSS", "JavaScript"],
+        "keywords": ["AI Agent Skill", "Claude Code skill", "Codex", "production-ready websites", "web engineering", "SEO", "AEO", "GEO", "accessibility", "performance", "security", "quality gates"],
+        "author": {"@id": "https://shrikantyadav.com/#person"}
+      },
+      {
+        "@type": "Person",
+        "@id": "https://shrikantyadav.com/#person",
+        "name": "Shrikant Yadav",
+        "url": "https://shrikantyadav.com/",
+        "sameAs": ["https://github.com/shrikant9907"]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://shrikant9907.github.io/ShriForgeAISkill/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is ShriForgeAISkill?",
+            "acceptedAnswer": {"@type": "Answer", "text": "ShriForgeAISkill is an open-source AI Agent Skill that gives coding agents a structured method to plan, design, build, audit, validate and ship production-ready websites."}
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use ShriForgeAISkill with Claude Code?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Yes. Clone the repository into a Claude Code skills directory, then ask Claude Code to build, improve or audit a website. The repository root containing SKILL.md is the skill root."}
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use ShriForgeAISkill with Codex or another AI coding agent?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Yes, when the coding agent can read repository files. Add ShriForgeAISkill to the workspace or make it available to the agent, then explicitly instruct the agent to read SKILL.md and follow its routing, truth and quality-gate instructions. Native skill discovery varies by tool."}
+          },
+          {
+            "@type": "Question",
+            "name": "How does ShriForgeAISkill prevent invented business facts?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Its Project Truth model separates verified facts, requirements, rules, decisions, assumptions and unknowns so unverified claims are not silently published as facts."}
+          },
+          {
+            "@type": "Question",
+            "name": "How does ShriForgeAISkill decide when a website is ready to ship?",
+            "acceptedAnswer": {"@type": "Answer", "text": "It runs applicable quality gates for requirements, functionality, responsiveness, accessibility, search, content truth, performance, security, privacy, maintainability and deployment, then returns PASS, PASS_WITH_NOTES, BLOCKED or FAIL."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-
   <div class="page-glow" aria-hidden="true"></div>
   <div class="grid-noise" aria-hidden="true"></div>
 
   <header class="site-header" data-header>
     <div class="shell nav-wrap">
-      <a class="brand" href="#top" aria-label="ShriForgeAISkill home">
-        <span class="brand-mark" aria-hidden="true">SF</span>
-        <span>ShriForge<span class="brand-soft">AI</span>Skill</span>
-      </a>
-
+      <a class="brand" href="./" aria-label="ShriForgeAISkill home"><span class="brand-mark" aria-hidden="true">SF</span><span>ShriForge<span class="brand-soft">AI</span>Skill</span></a>
       <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="#system">System</a>
-        <a href="#capabilities">Capabilities</a>
-        <a href="#workflow">Workflow</a>
-        <a href="#install">Install</a>
+        <a href="#system">System</a><a href="#capabilities">Capabilities</a><a href="getting-started.html">Get started</a><a href="faq.html">FAQ</a>
       </nav>
-
-      <a class="button button-small button-ghost" href="https://github.com/shrimo-innovations/shriforge-ai-skill" target="_blank" rel="noreferrer">
-        GitHub
-        <span aria-hidden="true">↗</span>
-      </a>
+      <a class="button button-small button-ghost" href="https://github.com/shrikant9907/ShriForgeAISkill" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
     </div>
   </header>
 
   <main id="main">
     <section class="hero shell" id="top">
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Open-source production web engineering</p>
-        <h1>From intent<br>to <span class="accent">production.</span></h1>
-        <p class="hero-lede">
-          ShriForgeAISkill gives AI coding agents a disciplined system for discovering, planning,
-          designing, building, validating, and shipping professional websites.
-        </p>
+      <div class="hero-copy reveal is-visible">
+        <p class="eyebrow"><span class="status-dot"></span> Open-source AI Agent Skill · v1.1.1</p>
+        <h1>Build websites<br><span class="accent">like products.</span></h1>
+        <p class="hero-lede"><strong>ShriForgeAISkill is a production web engineering skill for Claude Code, Codex and other AI coding agents.</strong> It turns a website request into a structured lifecycle: understand the repository, establish truth, plan intent and architecture, design, build, validate, fix and ship.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#install">Install the skill <span aria-hidden="true">→</span></a>
-          <a class="button button-ghost" href="https://github.com/shrimo-innovations/shriforge-ai-skill" target="_blank" rel="noreferrer">View source <span aria-hidden="true">↗</span></a>
+          <a class="button button-primary" href="getting-started.html">Start using the skill <span aria-hidden="true">→</span></a>
+          <a class="button button-ghost" href="https://github.com/shrikant9907/ShriForgeAISkill" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="hero-meta" aria-label="Project details">
-          <span>Apache-2.0</span>
-          <span>Framework-aware</span>
-          <span>Quality-gated</span>
-          <span>Built by Shrimo Innovations</span>
-        </div>
+        <div class="hero-meta"><span>Apache-2.0</span><span>Framework-aware</span><span>SEO · AEO · GEO</span><span>A11y · Performance · Security</span></div>
       </div>
 
-      <div class="hero-system reveal" aria-label="ShriForgeAISkill workflow visualization">
-        <div class="terminal-card">
-          <div class="terminal-top">
-            <span class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></span>
-            <span class="terminal-title">shriforge-ai-skill / execution</span>
-            <span class="terminal-state">PASS</span>
+      <div class="terminal-card reveal is-visible" aria-label="ShriForgeAISkill execution model">
+        <div class="terminal-top"><div class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></div><span class="terminal-title">production.website</span><span class="terminal-state">ACTIVE</span></div>
+        <div class="terminal-body">
+          <p><span class="prompt">›</span> Build a complete professional website.</p>
+          <div class="trace">
+            <div><span>01</span><strong>DISCOVER</strong><em>repository + constraints</em></div>
+            <div><span>02</span><strong>TRUTH</strong><em>facts ≠ assumptions</em></div>
+            <div><span>03</span><strong>INTENT</strong><em>audience → action</em></div>
+            <div><span>04</span><strong>ARCHITECT</strong><em>pages + components</em></div>
+            <div><span>05</span><strong>BUILD</strong><em>small coherent change</em></div>
+            <div><span>06</span><strong>VALIDATE</strong><em>quality gates</em></div>
+            <div><span>07</span><strong>SHIP</strong><em>explicit status</em></div>
           </div>
-          <div class="terminal-body">
-            <p><span class="prompt">›</span> Build a premium school website for India.</p>
-            <div class="trace">
-              <div><span>01</span><strong>DISCOVER</strong><em>repository + requirements</em></div>
-              <div><span>02</span><strong>TRUTH</strong><em>facts + assumptions</em></div>
-              <div><span>03</span><strong>INTENT</strong><em>audience + journeys</em></div>
-              <div><span>04</span><strong>ARCHITECT</strong><em>pages + components</em></div>
-              <div><span>05</span><strong>BUILD</strong><em>selective modules</em></div>
-              <div><span>06</span><strong>VALIDATE</strong><em>quality gates</em></div>
-              <div><span>07</span><strong>SHIP</strong><em>release status</em></div>
-            </div>
-            <div class="terminal-result">
-              <span>release</span>
-              <strong>PASS_WITH_NOTES</strong>
-            </div>
-          </div>
+          <div class="terminal-result"><span>Release confidence</span><strong>PASS / NOTES / BLOCKED / FAIL</strong></div>
         </div>
       </div>
     </section>
 
-    <section class="marquee" aria-label="Core principles">
-      <div class="marquee-track">
-        <span>REPOSITORY FIRST</span><i>✦</i><span>EVIDENCE BEFORE CLAIMS</span><i>✦</i><span>INTENT BEFORE PAGES</span><i>✦</i><span>SELECTIVE EXECUTION</span><i>✦</i><span>VALIDATE BEFORE SHIP</span><i>✦</i>
-        <span>REPOSITORY FIRST</span><i>✦</i><span>EVIDENCE BEFORE CLAIMS</span><i>✦</i><span>INTENT BEFORE PAGES</span><i>✦</i><span>SELECTIVE EXECUTION</span><i>✦</i><span>VALIDATE BEFORE SHIP</span><i>✦</i>
-      </div>
-    </section>
+    <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>REPOSITORY FIRST</span><i>✦</i><span>PROJECT TRUTH</span><i>✦</i><span>INTENT FIRST</span><i>✦</i><span>SEO + AEO + GEO</span><i>✦</i><span>ACCESSIBILITY</span><i>✦</i><span>PERFORMANCE</span><i>✦</i><span>SECURITY</span><i>✦</i><span>QUALITY GATES</span><i>✦</i><span>REPOSITORY FIRST</span><i>✦</i><span>PROJECT TRUTH</span><i>✦</i><span>INTENT FIRST</span><i>✦</i><span>SEO + AEO + GEO</span><i>✦</i><span>ACCESSIBILITY</span><i>✦</i><span>PERFORMANCE</span><i>✦</i><span>SECURITY</span><i>✦</i><span>QUALITY GATES</span><i>✦</i></div></div>
 
     <section class="section shell" id="system">
-      <div class="section-heading reveal">
-        <p class="kicker">01 / THE SYSTEM</p>
-        <h2>Not a giant prompt.<br><span>A production methodology.</span></h2>
-        <p>One orchestrator routes only the modules that matter for the current task, keeping context focused while protecting engineering quality.</p>
-      </div>
-
+      <div class="section-heading reveal"><p class="kicker">01 / FULL WEBSITE LIFECYCLE</p><h2>More than a website generator.<br><span>A production methodology.</span></h2><p>ShriForgeAISkill coordinates the work that normally gets split across separate design, frontend, SEO, accessibility, performance, security and QA prompts.</p></div>
       <div class="feature-grid">
-        <article class="feature-card feature-card-wide reveal">
-          <div class="feature-index">01</div>
-          <div>
-            <p class="card-label">Project Truth</p>
-            <h3>Facts stay facts. Assumptions stay visible.</h3>
-            <p>Separate FACT, REQUIREMENT, RULE, DECISION, ASSUMPTION, and UNKNOWN so agents do not silently invent business claims.</p>
-          </div>
-          <div class="truth-stack" aria-hidden="true">
-            <span class="truth-fact">FACT</span>
-            <span>REQUIREMENT</span>
-            <span>DECISION</span>
-            <span class="truth-assumption">ASSUMPTION</span>
-          </div>
-        </article>
-
-        <article class="feature-card reveal">
-          <div class="feature-index">02</div>
-          <p class="card-label">Intent architecture</p>
-          <h3>Start with what people need to accomplish.</h3>
-          <p>Audience → intent → information → trust → page → content → action.</p>
-          <div class="mini-flow" aria-hidden="true"><span>Audience</span><b>→</b><span>Intent</span><b>→</b><span>Action</span></div>
-        </article>
-
-        <article class="feature-card reveal">
-          <div class="feature-index">03</div>
-          <p class="card-label">Change surface</p>
-          <h3>Understand impact before touching code.</h3>
-          <p>Map routes, components, content, tests, metadata, accessibility, and deployment implications before significant edits.</p>
-        </article>
-
-        <article class="feature-card reveal">
-          <div class="feature-index">04</div>
-          <p class="card-label">Quality loop</p>
-          <h3>Build. Validate. Fix. Re-validate.</h3>
-          <p>Generated code is not the finish line. Applicable quality gates decide whether work is actually complete.</p>
-        </article>
-
-        <article class="feature-card feature-card-accent reveal">
-          <div class="feature-index">05</div>
-          <p class="card-label">Release confidence</p>
-          <h3>Completion is explicit.</h3>
-          <div class="release-list">
-            <span><i class="state-pass"></i> PASS</span>
-            <span><i class="state-notes"></i> PASS_WITH_NOTES</span>
-            <span><i class="state-block"></i> BLOCKED</span>
-            <span><i class="state-fail"></i> FAIL</span>
-          </div>
-        </article>
+        <article class="feature-card feature-card-wide reveal"><div class="feature-index">01</div><div><p class="card-label">Project Truth</p><h3>Stop AI agents from turning assumptions into business claims.</h3><p>Facts, requirements, rules, decisions, assumptions and unknowns are tracked separately. If a school affiliation, award, statistic, testimonial or credential is not verified, the skill does not present it as fact.</p></div><div class="truth-stack" aria-hidden="true"><span class="truth-fact">FACT</span><span>REQUIREMENT</span><span>DECISION</span><span class="truth-assumption">ASSUMPTION</span></div></article>
+        <article class="feature-card reveal"><div class="feature-index">02</div><p class="card-label">Intent-first architecture</p><h3>Start with what visitors need to accomplish.</h3><p>Audience → intent → information → trust → page → content → action.</p><div class="mini-flow" aria-hidden="true"><span>Audience</span><b>→</b><span>Intent</span><b>→</b><span>Action</span></div></article>
+        <article class="feature-card reveal"><div class="feature-index">03</div><p class="card-label">Repository-aware</p><h3>Understand healthy existing code before replacing it.</h3><p>The skill maps architecture, conventions, dependencies, content, tests and change surface before significant edits.</p></article>
+        <article class="feature-card reveal"><div class="feature-index">04</div><p class="card-label">Continuous quality loop</p><h3>Build. Validate. Fix. Re-validate.</h3><p>A successful build is evidence, not the definition of completion. Applicable gates decide whether the result is ready.</p></article>
+        <article class="feature-card feature-card-accent reveal"><div class="feature-index">05</div><p class="card-label">Release confidence</p><h3>Completion is explicit.</h3><div class="release-list"><span><i class="state-pass"></i> PASS</span><span><i class="state-notes"></i> PASS_WITH_NOTES</span><span><i class="state-block"></i> BLOCKED</span><span><i class="state-fail"></i> FAIL</span></div></article>
       </div>
     </section>
 
     <section class="section section-border shell" id="capabilities">
-      <div class="section-heading section-heading-split reveal">
-        <div>
-          <p class="kicker">02 / CAPABILITIES</p>
-          <h2>One skill.<br><span>Full website lifecycle.</span></h2>
-        </div>
-        <p>Product thinking, design, engineering, discoverability, and quality assurance are coordinated rather than treated as isolated checklists.</p>
-      </div>
-
+      <div class="section-heading section-heading-split reveal"><div><p class="kicker">02 / CAPABILITIES</p><h2>One skill.<br><span>Full production coverage.</span></h2></div><p>Use it for greenfield websites, existing repositories, features, redesigns, bug fixes, content updates, search optimization, audits, migrations and production releases.</p></div>
       <div class="capability-list">
-        <article class="cap-row reveal">
-          <span class="cap-num">01</span><h3>Product & architecture</h3><p>Requirements, repository discovery, information architecture, visitor intent, change-surface analysis.</p><span class="cap-arrow" aria-hidden="true">↗</span>
-        </article>
-        <article class="cap-row reveal">
-          <span class="cap-num">02</span><h3>Design & experience</h3><p>UX, visual direction, responsive systems, content hierarchy, interactions, reusable components.</p><span class="cap-arrow" aria-hidden="true">↗</span>
-        </article>
-        <article class="cap-row reveal">
-          <span class="cap-num">03</span><h3>Frontend engineering</h3><p>Framework-aware implementation, forms, state boundaries, error/loading states, maintainability.</p><span class="cap-arrow" aria-hidden="true">↗</span>
-        </article>
-        <article class="cap-row reveal">
-          <span class="cap-num">04</span><h3>Search & discovery</h3><p>SEO, AEO/GEO, local search, metadata, internal linking, and truthful structured data.</p><span class="cap-arrow" aria-hidden="true">↗</span>
-        </article>
-        <article class="cap-row reveal">
-          <span class="cap-num">05</span><h3>Quality engineering</h3><p>Accessibility, performance, security, privacy, testing, deployment readiness, final audits.</p><span class="cap-arrow" aria-hidden="true">↗</span>
-        </article>
+        <article class="cap-row reveal"><span class="cap-num">01</span><h3>Product & architecture</h3><p>Requirements, repository discovery, information architecture, visitor intent, change-surface analysis and technical decisions.</p><span class="cap-arrow" aria-hidden="true">↗</span></article>
+        <article class="cap-row reveal"><span class="cap-num">02</span><h3>Design & experience</h3><p>UX, visual direction, responsive systems, hierarchy, interactions and reusable components without generic template aesthetics.</p><span class="cap-arrow" aria-hidden="true">↗</span></article>
+        <article class="cap-row reveal"><span class="cap-num">03</span><h3>Frontend engineering</h3><p>Framework-aware implementation, forms, validation, state boundaries, errors, loading states and maintainable architecture.</p><span class="cap-arrow" aria-hidden="true">↗</span></article>
+        <article class="cap-row reveal"><span class="cap-num">04</span><h3>Search & AI discovery</h3><p>SEO, answer-oriented content, AEO/GEO, local search, crawlability, metadata, internal links and truthful structured data.</p><span class="cap-arrow" aria-hidden="true">↗</span></article>
+        <article class="cap-row reveal"><span class="cap-num">05</span><h3>Quality engineering</h3><p>Accessibility, performance, security, privacy, testing, deployment readiness and final production audits.</p><span class="cap-arrow" aria-hidden="true">↗</span></article>
       </div>
     </section>
 
     <section class="section shell" id="workflow">
-      <div class="section-heading reveal">
-        <p class="kicker">03 / WORKFLOW</p>
-        <h2>Selective by design.<br><span>Rigorous when it matters.</span></h2>
-      </div>
-
+      <div class="section-heading reveal"><p class="kicker">03 / HOW IT WORKS</p><h2>Selective by design.<br><span>Rigorous when it matters.</span></h2></div>
       <div class="workflow-board reveal">
-        <div class="workflow-line" aria-hidden="true"></div>
-        <div class="workflow-step"><span>01</span><strong>Discover</strong><p>Inspect project state and repository conventions.</p></div>
-        <div class="workflow-step"><span>02</span><strong>Understand</strong><p>Separate facts, requirements, risks, and assumptions.</p></div>
-        <div class="workflow-step"><span>03</span><strong>Plan</strong><p>Map intent, information architecture, and change surface.</p></div>
-        <div class="workflow-step"><span>04</span><strong>Build</strong><p>Load only the disciplines and adapter required.</p></div>
-        <div class="workflow-step"><span>05</span><strong>Validate</strong><p>Run applicable accessibility, search, performance, security, and QA gates.</p></div>
-        <div class="workflow-step"><span>06</span><strong>Ship</strong><p>Return explicit release confidence and remaining notes.</p></div>
+        <div class="workflow-step"><span>01</span><strong>Discover</strong><p>Inspect project state, stack and healthy repository conventions.</p></div>
+        <div class="workflow-step"><span>02</span><strong>Understand</strong><p>Separate facts, requirements, risks, decisions and assumptions.</p></div>
+        <div class="workflow-step"><span>03</span><strong>Plan</strong><p>Map visitor intent, information architecture and change surface.</p></div>
+        <div class="workflow-step"><span>04</span><strong>Build</strong><p>Load only the workflow, disciplines, adapter and profile required.</p></div>
+        <div class="workflow-step"><span>05</span><strong>Validate</strong><p>Run applicable UX, accessibility, search, performance, security and QA gates.</p></div>
+        <div class="workflow-step"><span>06</span><strong>Ship</strong><p>Fix blocking issues and return explicit release confidence.</p></div>
       </div>
+      <div class="workflow-tags reveal" aria-label="Supported workflows"><span>New Website</span><span>Existing Website</span><span>Feature</span><span>Redesign</span><span>Bug Fix</span><span>Content Update</span><span>Search Optimization</span><span>Audit</span><span>Migration</span><span>Production Release</span></div>
+    </section>
 
-      <div class="workflow-tags reveal" aria-label="Supported workflows">
-        <span>New Website</span><span>Existing Website</span><span>Feature</span><span>Redesign</span><span>Bug Fix</span><span>Content Update</span><span>Search Optimization</span><span>Audit</span><span>Migration</span><span>Production Release</span>
+    <section class="section section-border shell" id="agents">
+      <div class="section-heading reveal"><p class="kicker">04 / USE WITH YOUR AI CODING AGENT</p><h2>Claude Code, Codex,<br><span>and repository-aware agents.</span></h2><p>The skill is native file-based guidance. Claude Code can discover it from a skills directory. In Codex or another coding agent, make the repository available and explicitly ask the agent to read <code>SKILL.md</code> before starting. Native discovery and exact setup vary by tool.</p></div>
+      <div class="agent-grid">
+        <article class="agent-card reveal"><span>Claude Code</span><h3>Install as a project skill.</h3><p>Clone into <code>.claude/skills/shriforge-ai-skill/</code>, then describe the outcome you want.</p><a href="claude-code.html">Claude Code guide →</a></article>
+        <article class="agent-card reveal"><span>OpenAI Codex</span><h3>Use as repository instructions.</h3><p>Place the skill in or beside the project and instruct Codex to read <code>SKILL.md</code> plus only the routed modules needed for the task.</p><a href="codex.html">Codex guide →</a></article>
+        <article class="agent-card reveal"><span>Other AI tools</span><h3>Use the portable manual path.</h3><p>If an agent can read local/repository files, point it to the skill root and tell it to follow the master orchestration contract.</p><a href="getting-started.html#other-tools">Generic setup →</a></article>
       </div>
     </section>
 
-    <section class="section section-border shell" id="install">
-      <div class="install-grid">
-        <div class="section-heading reveal">
-          <p class="kicker">04 / INSTALL</p>
-          <h2>Drop it in.<br><span>Give it an outcome.</span></h2>
-          <p>Install ShriForgeAISkill as a Claude Code skill, then describe what you want to build or improve. The skill handles routing and quality methodology.</p>
-          <a class="button button-primary" href="https://github.com/shrimo-innovations/shriforge-ai-skill" target="_blank" rel="noreferrer">Open on GitHub <span aria-hidden="true">↗</span></a>
-        </div>
-
-        <div class="code-panel reveal">
-          <div class="code-tabs" role="tablist" aria-label="Installation examples">
-            <button class="code-tab is-active" type="button" role="tab" aria-selected="true" data-code-tab="install">Install</button>
-            <button class="code-tab" type="button" role="tab" aria-selected="false" data-code-tab="prompt">Prompt</button>
-          </div>
-          <pre class="code-block is-active" data-code-panel="install"><code><span class="code-comment"># Project-local Claude Code skill</span>
-git clone \
-  https://github.com/shrimo-innovations/shriforge-ai-skill.git \
-  .claude/skills/shriforge-ai-skill
-
-<span class="code-comment"># Validate the repository</span>
-python scripts/validate_repo.py</code></pre>
-          <pre class="code-block" data-code-panel="prompt"><code>Build a production-ready website for a school in India.
-
-Make it professional, trustworthy and mobile-first.
-Handle architecture, design, implementation, SEO,
-accessibility, performance, testing and final validation.
-
-Do not invent school facts.</code></pre>
-        </div>
+    <section class="section shell" id="faq">
+      <div class="section-heading reveal"><p class="kicker">05 / QUICK ANSWERS</p><h2>Frequently asked<br><span>questions.</span></h2></div>
+      <div class="faq-list">
+        <details class="faq-item reveal"><summary>What is ShriForgeAISkill?</summary><p>ShriForgeAISkill is an open-source AI Agent Skill that gives coding agents a structured method to plan, design, build, audit, validate and ship production-ready websites.</p></details>
+        <details class="faq-item reveal"><summary>Can I use ShriForgeAISkill with Claude Code?</summary><p>Yes. Clone the repository into a Claude Code skills directory, then ask Claude Code to build, improve or audit a website. The directory containing <code>SKILL.md</code> is the skill root.</p></details>
+        <details class="faq-item reveal"><summary>Can I use it with Codex or another AI coding agent?</summary><p>Yes, when the agent can read repository files. Make ShriForgeAISkill available in the workspace and explicitly instruct the agent to read <code>SKILL.md</code> and follow its routing, Project Truth and quality-gate instructions. Native skill discovery varies by tool.</p></details>
+        <details class="faq-item reveal"><summary>How does it prevent AI from inventing business facts?</summary><p>The Project Truth model keeps verified facts separate from requirements, rules, decisions, assumptions and unknowns. Unverified claims should be omitted, clearly marked or requested when essential.</p></details>
+        <details class="faq-item reveal"><summary>How does it decide a website is ready to ship?</summary><p>It runs the quality gates applicable to the task and returns one of four explicit states: PASS, PASS_WITH_NOTES, BLOCKED or FAIL.</p></details>
       </div>
+      <p class="section-link reveal"><a href="faq.html">Read the complete ShriForgeAISkill FAQ →</a></p>
     </section>
 
     <section class="cta-section shell reveal">
-      <div class="cta-orb" aria-hidden="true"></div>
-      <p class="kicker">OPEN SOURCE / APACHE-2.0</p>
-      <h2>Build websites like<br><span>finished products.</span></h2>
-      <p>ShriForgeAISkill is open source and built for developers, teams, and AI coding agents that care about what happens after code generation.</p>
-      <div class="hero-actions cta-actions">
-        <a class="button button-primary" href="https://github.com/shrimo-innovations/shriforge-ai-skill" target="_blank" rel="noreferrer">Explore the repository <span aria-hidden="true">↗</span></a>
-        <a class="button button-ghost" href="https://github.com/shrimo-innovations/shriforge-ai-skill/issues" target="_blank" rel="noreferrer">Contribute</a>
-      </div>
+      <div class="cta-orb" aria-hidden="true"></div><p class="kicker">OPEN SOURCE / APACHE-2.0</p><h2>From requirement to<br><span>release confidence.</span></h2><p>Start with the installation guide, then give your coding agent a real project outcome. ShriForgeAISkill supplies the production methodology.</p>
+      <div class="hero-actions cta-actions"><a class="button button-primary" href="getting-started.html">Get started <span aria-hidden="true">→</span></a><a class="button button-ghost" href="https://github.com/shrikant9907/ShriForgeAISkill" target="_blank" rel="noopener noreferrer">Explore GitHub <span aria-hidden="true">↗</span></a></div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="shell footer-grid">
-      <div>
-        <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">SF</span><span>ShriForge<span class="brand-soft">AI</span>Skill</span></a>
-        <p>Production Web Engineering Skill by Shrimo Innovations.</p>
-      </div>
-      <div class="footer-meta">
-        <p>Created by <strong>Shrikant Yadav</strong></p>
-        <p>© <span data-year></span> Shrimo Innovations</p>
-      </div>
-      <div class="footer-links">
-        <a href="https://github.com/shrimo-innovations/shriforge-ai-skill" target="_blank" rel="noreferrer">GitHub ↗</a>
-        <a href="https://github.com/shrimo-innovations/shriforge-ai-skill/blob/main/LICENSE" target="_blank" rel="noreferrer">License ↗</a>
-      </div>
+      <div><a class="brand footer-brand" href="./"><span class="brand-mark" aria-hidden="true">SF</span><span>ShriForge<span class="brand-soft">AI</span>Skill</span></a><p>Open-source production web engineering skill.</p></div>
+      <div class="footer-meta"><p>Created by <a class="author-link" href="https://shrikantyadav.com/" rel="me">Shrikant Yadav</a></p><p>© <span data-year></span> Shrikant Yadav</p></div>
+      <div class="footer-links"><a href="getting-started.html">Docs</a><a href="faq.html">FAQ</a><a href="https://github.com/shrikant9907/ShriForgeAISkill" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
     </div>
   </footer>
 </body>
