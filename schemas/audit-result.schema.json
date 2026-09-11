@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ShriForgeAISkill Audit Result",
+  "type": "object",
+  "required": [
+    "status",
+    "findings"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "PASS",
+        "PASS_WITH_NOTES",
+        "BLOCKED",
+        "FAIL"
+      ]
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "severity",
+          "title"
+        ],
+        "properties": {
+          "severity": {
+            "enum": [
+              "BLOCKER",
+              "HIGH",
+              "MEDIUM",
+              "LOW"
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$id": "urn:shriforgeaiskill:schema:audit-result:v1"
+}

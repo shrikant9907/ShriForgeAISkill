@@ -1,0 +1,11 @@
+version: 1
+project:
+  name: ""
+  type: ""
+  market: ""
+audiences: []
+primary_intents: []
+technology:
+  framework: ""
+  package_manager: ""
+constraints: []
