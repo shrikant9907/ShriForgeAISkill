@@ -8,219 +8,77 @@ Created by **Shrikant Yadav**
 
 It gives coding agents a structured engineering methodology for turning requirements into reliable web experiences through repository-aware planning, evidence-based content decisions, intent-first architecture, selective workflows, and explicit quality gates.
 
+[**Website**](https://shrimo-innovations.github.io/shriforge-ai-skill/) · [**Source**](https://github.com/shrimo-innovations/shriforge-ai-skill) · [**Issues**](https://github.com/shrimo-innovations/shriforge-ai-skill/issues) · **Apache-2.0**
+
 ---
 
 ## Why ShriForgeAISkill?
 
-Building a website is more than generating components.
+Building a website is more than generating components. A production website must also consider user intent, information architecture, visual design, responsive behavior, accessibility, performance, SEO and discoverability, structured data, security, privacy, maintainability, testing, and deployment readiness.
 
-A production website must also consider:
-
-* user intent;
-* information architecture;
-* visual design;
-* responsive behavior;
-* accessibility;
-* performance;
-* SEO and discoverability;
-* structured data;
-* security;
-* privacy;
-* maintainability;
-* testing;
-* deployment readiness.
-
-ShriForgeAISkill brings these concerns into one coordinated system.
-
-Instead of treating generated code as finished work, it follows a continuous engineering loop:
+ShriForgeAISkill coordinates those concerns through one engineering system:
 
 ```text
-Understand
-   ↓
-Plan
-   ↓
-Architect
-   ↓
-Design
-   ↓
-Build
-   ↓
-Validate
-   ↓
-Improve
-   ↓
-Ship
+Understand → Plan → Architect → Design → Build → Validate → Improve → Ship
 ```
 
----
+It is deliberately **not** one giant prompt. The master skill routes only the workflows, disciplines, framework guidance, and domain knowledge relevant to the current task.
 
-## What makes it different?
-
-ShriForgeAISkill is not designed as one giant prompt.
-
-It uses a small orchestrator that loads only the workflows, disciplines, framework guidance, and domain knowledge needed for the current task.
+## What makes it different
 
 ### Repository-aware
 
-For existing projects, ShriForgeAISkill inspects the repository before making significant changes.
-
-It aims to preserve healthy architecture, conventions, components, dependencies, and business logic instead of replacing working infrastructure unnecessarily.
+For existing projects, ShriForgeAISkill inspects the repository before making significant changes. It aims to preserve healthy architecture, conventions, components, dependencies, and business logic instead of replacing working infrastructure unnecessarily.
 
 ### Evidence before claims
 
 The **Project Truth** model separates information into:
 
 ```text
-FACT
-REQUIREMENT
-RULE
-DECISION
-ASSUMPTION
-UNKNOWN
+FACT · REQUIREMENT · RULE · DECISION · ASSUMPTION · UNKNOWN
 ```
 
-Unverified business claims should not silently become published facts.
-
-This helps prevent fabricated:
-
-* achievements;
-* affiliations;
-* statistics;
-* testimonials;
-* ratings;
-* credentials;
-* locations;
-* organization details.
+Unverified business claims should never silently become published facts. This helps prevent fabricated achievements, affiliations, statistics, testimonials, ratings, credentials, locations, and organization details.
 
 ### Intent before pages
 
-ShriForgeAISkill does not begin with:
-
-> “What pages should we generate?”
-
-It begins with:
+ShriForgeAISkill does not start with “what pages should we generate?” It derives architecture from what people need to accomplish:
 
 ```text
-Audience
-   ↓
-Intent
-   ↓
-Information Need
-   ↓
-Trust Requirement
-   ↓
-Page / Section
-   ↓
-Content
-   ↓
-Action
+Audience → Intent → Information Need → Trust Requirement → Page / Section → Content → Action
 ```
-
-This keeps product thinking, UX, content, conversion, and search architecture aligned.
 
 ### Selective execution
 
-Not every task requires the entire engineering system.
-
-For example:
+Different tasks activate different workflows:
 
 ```text
-"Build a complete website"
-→ full website workflow
-
-"Add an admissions page"
-→ feature workflow
-
-"Fix the mobile navigation"
-→ bug-fix workflow
-
-"Make the homepage more premium"
-→ redesign workflow
-
-"Audit the site before launch"
-→ audit + release gates
+Build a complete website          → full website workflow
+Add an admissions page           → feature workflow
+Fix mobile navigation            → bug-fix workflow
+Make the homepage more premium   → redesign workflow
+Audit before launch              → audit + release gates
 ```
-
-ShriForgeAISkill loads only what is relevant.
 
 ### Continuous quality loop
 
-Work is not considered complete simply because the code builds.
+Generated code is not the finish line:
 
 ```text
-BUILD
-  ↓
-VALIDATE
-  ↓
-FIND ISSUES
-  ↓
-PRIORITIZE
-  ↓
-FIX
-  ↓
-RE-VALIDATE
-  ↓
-PASS / ITERATE
+BUILD → VALIDATE → FIND ISSUES → PRIORITIZE → FIX → RE-VALIDATE → PASS / ITERATE
 ```
 
----
-
-# Capabilities
+## Capabilities
 
 ShriForgeAISkill includes methodologies for:
 
-### Product & architecture
+- **Product & architecture** — requirements, repository discovery, information architecture, visitor intent, change-surface analysis, and technical decision making.
+- **Design & experience** — UX planning, visual direction, responsive design, content hierarchy, interaction design, and component systems.
+- **Frontend engineering** — framework-aware implementation, forms and validation, loading/error/empty states, and maintainable component architecture.
+- **Search & discoverability** — SEO, AEO/GEO, local search, metadata, structured data, internal linking, and crawlability.
+- **Quality engineering** — accessibility, performance, security, privacy, testing, deployment readiness, and final production audits.
 
-* requirements analysis;
-* repository discovery;
-* information architecture;
-* visitor intent mapping;
-* change-surface analysis;
-* technical decision making.
-
-### Design & experience
-
-* UX planning;
-* visual direction;
-* responsive design;
-* component systems;
-* content hierarchy;
-* interaction design.
-
-### Engineering
-
-* frontend architecture;
-* reusable components;
-* framework-aware implementation;
-* forms and validation;
-* error, loading, and empty states;
-* maintainability.
-
-### Search & discoverability
-
-* technical SEO;
-* AEO / answer-oriented content;
-* GEO / AI-search discoverability;
-* local search;
-* metadata;
-* structured data;
-* internal linking.
-
-### Quality
-
-* accessibility;
-* performance;
-* security;
-* privacy;
-* testing;
-* deployment readiness;
-* final production audits.
-
----
-
-# Supported workflows
-
-ShriForgeAISkill includes dedicated workflows for:
+## Supported workflows
 
 ```text
 New Website
@@ -235,274 +93,100 @@ Migration
 Production Release
 ```
 
-Each workflow defines:
+Each workflow defines when to use it, required inputs, discovery and planning steps, execution sequence, applicable disciplines, validation gates, expected outputs, and blocker conditions.
 
-* when it should be used;
-* required inputs;
-* discovery steps;
-* planning steps;
-* execution sequence;
-* required disciplines;
-* validation gates;
-* expected outputs;
-* blocker conditions.
+## Framework architecture
 
----
+The core methodology is framework-neutral. Framework-specific behavior is handled through adapters.
 
-# Framework architecture
+Current adapters cover:
 
-The core methodology is framework-neutral.
+- Next.js App Router
+- React / Vite
+- Astro
+- Static HTML / CSS / JavaScript
 
-Framework-specific behavior is handled through adapters.
+## Domain profiles
 
-Current repository structure supports guidance for:
+Profiles specialize the same engineering system without duplicating it. Current profiles include:
 
-* Next.js App Router;
-* React / Vite;
-* Astro;
-* static HTML / CSS / JavaScript.
+- schools and educational institutions;
+- local businesses;
+- SaaS marketing websites.
 
-This separation allows ShriForgeAISkill to evolve without coupling its entire methodology to one framework.
+## Install as a Claude Code skill
 
----
+Clone the repository into a Claude Code skill directory supported by your environment.
 
-# Domain profiles
+Project-local example:
 
-Profiles specialize the same engineering system for different types of websites.
-
-Examples include:
-
-* schools and educational institutions;
-* local businesses;
-* SaaS marketing websites.
-
-A profile may define:
-
-* primary audiences;
-* common visitor intents;
-* domain-specific content;
-* trust requirements;
-* search considerations;
-* claim restrictions.
-
-Profiles extend the engine without duplicating it.
-
----
-
-# Installation
-
-## Claude Code
-
-Clone or copy ShriForgeAISkill into a Claude Code skills directory supported by your environment.
-
-For a project-local installation:
-
-```text
-.claude/
-└── skills/
-    └── shriforge-ai-skill/
-        ├── SKILL.md
-        ├── core/
-        ├── workflows/
-        ├── disciplines/
-        └── ...
+```bash
+git clone https://github.com/shrimo-innovations/shriforge-ai-skill.git \
+  .claude/skills/shriforge-ai-skill
 ```
 
 The directory containing `SKILL.md` is the skill root.
 
-A typical Git-based installation might look like:
+Then ask Claude Code for outcomes such as:
 
-```bash
-git clone <repository-url> .claude/skills/shriforge-ai-skill
-```
+> Build a production-ready website for a school in India. Make it professional, trustworthy and mobile-first. Handle architecture, design, implementation, SEO, accessibility, performance, testing, and final validation. Do not invent school facts.
 
-Consult the current Claude Code documentation if your environment uses a different skill location or installation method.
+Or:
 
----
+> Inspect this repository first. Add a new admissions page that follows the existing architecture and design system. Validate accessibility, mobile behavior, metadata, and navigation before considering the task complete.
 
-# Usage
+## Official project website
 
-Once installed, describe the outcome you want.
+The repository includes a dependency-free GitHub Pages site under [`docs/`](docs/).
 
-### Build a new website
+Once GitHub Pages is enabled from the `main` branch and `/docs` folder, it is available at:
 
-```text
-Build a production-ready website for a school in India.
+**https://shrimo-innovations.github.io/shriforge-ai-skill/**
 
-Make it professional, trustworthy, mobile-first and easy for
-parents to understand.
+The site is built with semantic HTML, responsive CSS, accessible focus behavior, reduced-motion support, and minimal JavaScript. No build step is required.
 
-Handle architecture, UX, implementation, SEO, accessibility,
-performance, testing and final release validation.
-
-Do not invent school facts.
-```
-
-### Work on an existing repository
-
-```text
-Inspect this repository first.
-
-Add a new admissions page that follows the existing architecture,
-design system and content patterns.
-
-Validate accessibility, mobile behavior, metadata and navigation
-before considering the task complete.
-```
-
-### Improve visual quality
-
-```text
-Redesign this homepage to feel more premium and distinctive.
-
-Preserve the existing business logic and factual content.
-
-Establish a clear visual direction instead of using a generic
-AI-generated landing-page aesthetic.
-```
-
-### Audit a website
-
-```text
-Audit this website for:
-
-- UX
-- accessibility
-- SEO
-- performance
-- security
-- responsive behavior
-- content quality
-- production readiness
-
-Fix issues where possible and clearly report remaining blockers.
-```
-
-### Prepare for release
-
-```text
-Prepare this project for production release.
-
-Run all applicable quality gates, fix blocking issues and provide
-a final PASS, PASS_WITH_NOTES, BLOCKED or FAIL status.
-```
-
----
-
-# Repository structure
+## Repository structure
 
 ```text
 ShriForgeAISkill/
-│
-├── SKILL.md
-│   Master orchestrator and operating contract
-│
-├── core/
-│   Routing, repository discovery, Project Truth,
-│   intent architecture, decisions and release gates
-│
-├── workflows/
-│   Task-specific execution contracts
-│
-├── disciplines/
-│   Canonical product, design and engineering methodologies
-│
-├── adapters/
-│   Framework-specific implementation guidance
-│
-├── profiles/
-│   Domain-specific specialization
-│
-├── checklists/
-│   Compact verification and release aids
-│
-├── templates/
-│   Optional planning, audit and handoff artifacts
-│
-├── schemas/
-│   Structured schemas for ShriForgeAISkill state
-│
-├── examples/
-│   Non-authoritative usage and routing examples
-│
-├── scripts/
-│   Repository validation utilities
-│
-└── tests/
-    Behavioral and structural validation
+├── SKILL.md          master orchestrator and operating contract
+├── core/             routing, Project Truth, intent, decisions, release gates
+├── workflows/        task-specific execution contracts
+├── disciplines/      canonical product, design, and engineering methodologies
+├── adapters/         framework-specific implementation guidance
+├── profiles/         domain-specific specialization
+├── checklists/       compact verification and release aids
+├── templates/        optional planning, audit, and handoff artifacts
+├── schemas/          structured schemas for ShriForgeAISkill state
+├── examples/         non-authoritative routing examples
+├── scripts/          repository validation utilities
+├── tests/            behavioral and structural validation
+└── docs/             official GitHub Pages website
 ```
 
----
+## Core design principles
 
-# Core design principles
+- **One brain, selective modules** — the master skill orchestrates while specialized knowledge stays modular.
+- **Repository first** — understand an existing project before changing it.
+- **Evidence before claims** — assumptions never silently become facts.
+- **Intent before pages** — structure follows what users need to accomplish.
+- **Progressive disclosure** — detailed guidance loads only when the task requires it.
+- **Framework-neutral core** — general methodology is not tied to one stack.
+- **Proportional validation** — validation matches scope and risk.
+- **Explicit completion** — work ends with a clear release state.
 
-ShriForgeAISkill follows several foundational principles.
+## Release states
 
-### One brain, selective modules
+ShriForgeAISkill uses four completion states:
 
-The master skill orchestrates the system while specialized knowledge remains modular.
+| State | Meaning |
+|---|---|
+| `PASS` | All applicable release gates passed. |
+| `PASS_WITH_NOTES` | Ready with documented non-blocking limitations. |
+| `BLOCKED` | Completion depends on missing information, credentials, infrastructure, or another dependency. |
+| `FAIL` | Known blocking defects remain. |
 
-### Repository first
-
-Understand an existing project before changing it.
-
-### Evidence before claims
-
-Do not convert assumptions into facts.
-
-### Intent before pages
-
-Architecture should be derived from what users need to accomplish.
-
-### Progressive disclosure
-
-Load detailed guidance only when the current task requires it.
-
-### Framework-neutral core
-
-General methodology should not depend on one technology stack.
-
-### Proportional validation
-
-Validation should match the scope and risk of the change.
-
-### Explicit completion
-
-A task should end with a clear status rather than vague claims of completion.
-
----
-
-# Release states
-
-ShriForgeAISkill uses four explicit completion states:
-
-```text
-PASS
-```
-
-All applicable release gates passed.
-
-```text
-PASS_WITH_NOTES
-```
-
-The work is usable or production-ready, with documented non-blocking limitations.
-
-```text
-BLOCKED
-```
-
-Completion depends on missing information, credentials, infrastructure, external services, or another unresolved dependency.
-
-```text
-FAIL
-```
-
-Known blocking defects remain.
-
----
-
-# Validation
+## Validation
 
 Run the repository validator:
 
@@ -516,21 +200,9 @@ Run the test suite:
 python -m unittest discover -s tests -v
 ```
 
-The validation system checks areas including:
+The validation system checks required files, skill metadata, internal references, schemas, workflow contracts, duplicate content, routing expectations, Project Truth behavior, and repository consistency.
 
-* required repository files;
-* skill metadata;
-* internal references;
-* schemas;
-* workflow contracts;
-* duplicate content;
-* routing expectations;
-* Project Truth behavior;
-* repository consistency.
-
----
-
-# Development philosophy
+## Development philosophy
 
 ShriForgeAISkill prefers:
 
@@ -546,50 +218,25 @@ maintainability over premature abstraction
 validation over confidence
 ```
 
-The goal is not to generate the largest amount of code.
+The goal is not to generate the largest amount of code. The goal is to produce the **smallest coherent implementation that satisfies the product requirement and passes the applicable quality gates**.
 
-The goal is to produce the **smallest coherent implementation that satisfies the product requirement and passes the applicable quality gates**.
+## Contributing
 
----
+Contributions that improve engineering methodology, framework support, accessibility, design quality, testing, security, performance, domain profiles, documentation, or validation are welcome.
 
-# Open source
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) before opening a pull request.
 
-ShriForgeAISkill is built as an open-source project.
+## Project information
 
-Contributions that improve:
+- **Project:** ShriForgeAISkill
+- **Organization:** Shrimo Innovations
+- **Creator:** Shrikant Yadav
+- **Category:** AI Agent Skill / Production Web Engineering
+- **License:** Apache-2.0
 
-* engineering methodology;
-* framework support;
-* accessibility;
-* design quality;
-* testing;
-* security;
-* performance;
-* domain profiles;
-* documentation;
-* validation;
+## License
 
-are welcome.
-
-Before contributing, read `CONTRIBUTING.md`.
-
----
-
-# Project information
-
-**Project:** ShriForgeAISkill
-**Organization:** Shrimo Innovations
-**Creator:** Shrikant Yadav
-**Category:** AI Agent Skill / Production Web Engineering
-**License:** Apache-2.0
-
----
-
-# License
-
-Licensed under the **Apache License 2.0**.
-
-See [`LICENSE`](LICENSE) for details.
+Licensed under the **Apache License 2.0**. See [`LICENSE`](LICENSE).
 
 ---
 
@@ -598,6 +245,4 @@ See [`LICENSE`](LICENSE) for details.
   Production Web Engineering Skill by Shrimo Innovations
 </p>
 
-<p align="center">
-  <em>From intent to production.</em>
-</p>
+<p align="center"><em>From intent to production.</em></p>

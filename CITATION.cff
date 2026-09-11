@@ -2,7 +2,7 @@ cff-version: 1.2.0
 title: ShriForgeAISkill
 message: If you use ShriForgeAISkill, cite the project repository.
 type: software
-version: 1.0.0
+version: 1.1.0
 license: Apache-2.0
 authors:
   - family-names: Yadav
